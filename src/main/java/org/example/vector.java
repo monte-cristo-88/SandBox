@@ -1,4 +1,4 @@
-package org;
+package org.example;
 
 public class vector {
     public static void main( String[] args) {
