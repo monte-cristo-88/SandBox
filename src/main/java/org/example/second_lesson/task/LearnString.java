@@ -9,7 +9,14 @@ public class LearnString {
 //        four();
 //        five();
 //        six();
-        seven();
+//        seven();
+//        eight();
+//        nine();
+    }
+    private static void nine() { System.out.println(text.lines());
+    }
+
+    private static void eight() { System.out.println(text.toCharArray());
     }
 
     private static void seven() {
@@ -36,6 +43,7 @@ public class LearnString {
 
     }
     static void five(){System.out.println(text.toLowerCase());}
+
 
 
 
