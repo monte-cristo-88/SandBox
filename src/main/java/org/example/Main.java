@@ -1,5 +1,7 @@
 package org.example;
 
+import java.math.BigDecimal;
+
 public class Main {
     public static void main(String[] args) {
         int[] intArray = {4, 5, 3, 4, 7, 5, 3, 23, 4234};
@@ -33,5 +35,6 @@ public class Main {
         char[] chars = text.toCharArray();
         System.out.println(text);
 
+        Хуйня хуйня = new Хуйня();
     }
 }
