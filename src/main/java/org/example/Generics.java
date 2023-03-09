@@ -2,10 +2,14 @@ package org.example;
 
 import java.util.*;
 
-public class Generics {
-    private final Map<Integer, String> infos = new HashMap<>();
+public class Generics { //  обьявление класса Generics
+    private final Map<Integer, String> infos = new HashMap<>(); /*  обьявление переменной 'infos' с типом Map<Integer, String>
+                                                                    с присвоением значения 'new HashMap<>()'
+                                                                    и 'new HashMap<>()' это вызов конструктора класса 'HashMap'*/
 
-    public static void main(String[] args) {
+
+    public static void main(String[] args) {    /*  обьявления статичного метода main принимающий в параметре переменную
+                                                    с название args и типом String[]    */
 
 //        String aString = "";
 //        boolean aBoolean = ";2" == ";2";
@@ -14,15 +18,20 @@ public class Generics {
 //        System.out.println(aBoolean);
 //        System.out.println(aSecondBoolean);
 
-        Список список = new Список();
+        Список список;  //  обьявление переменной список типа Список
+        список = new Список();   // переменной список присваиваем значение вызывая конструкор класса Список
 
-        список.добавить("sdfsdf");
+        список.добавить("sdfsdf");  /*  вызывfем метод 'добавить' принbмающий параметр типа String
+                                                у переменной 'список' */
 
-        Collection<Integer> collection = new ArrayList<>();
-        List<Integer> list = new ArrayList<>();
+        Collection<Integer> collection = new ArrayList<>();  /* обьявление переменной типа Collection <Integer>
+                                                                с названием collection присваиваем значение
+                                                                класса ArrayList */
+        List<Integer> list = new ArrayList<>(); /* обьявление перемнной типа List<Integer> с названием list
+                                                    присваиваем значение класса ArrayList */
         List<Integer> longList = new ArrayList<>();
 
-        list.add(1);
+        list.add(1);    // вызываем метод add переменной list принимающий параметр типа Int
         list.add(2);
         list.add(2);
         list.add(3);
@@ -39,7 +48,10 @@ public class Generics {
         set.add(3);
 
         Set<SomeClass> someClasses = new HashSet<>();
-        someClasses.add(new SomeClass(1, 1));
+        someClasses.add(                                  /*   вызываем метод add переменной someClasses принимает
+                                                               перменную типа SomeClass*/
+                new SomeClass(1, 1)  //
+        );
         someClasses.add(new SomeClass(1, 1));
         someClasses.add(new SomeClass(1, 1));
         someClasses.add(new SomeClass(1, 1));
@@ -52,7 +64,7 @@ public class Generics {
         stack.push(2);
         stack.push(3);
         stack.push(4);
-        System.out.println("Stack result " + stack.pop());
+        System.out.println("Stack result " + stack.pop());  //
         System.out.println("Stack result " + stack.pop());
         System.out.println("Stack result " + stack.pop());
         System.out.println("Stack result " + stack.pop());
@@ -80,7 +92,7 @@ public class Generics {
 
     }
 
-    static class Gen<E extends Collection, T,F,G,D,S,A> {
+    static class Gen<E extends Collection, T, F, G, D, S, A> {
         void add(E e) {
 
         }
