@@ -6,4 +6,9 @@ public class Zeekr extends lehkovoi{
     public String tipDvigatelya() {
         return "elektricheskii";
     }
+
+    @Override
+    public void someMethod() {
+
+    }
 }

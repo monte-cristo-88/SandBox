@@ -40,8 +40,12 @@ public class Algorithm {
 //            }
 
         int currentElementValue = 1;
-        for (int row = 0; row < massiv.length; row++) {
-            for (int column = massiv.length - 1; column >= 0; column--) {
+        for (int row = 0;
+             row < massiv.length;
+             row++) {
+            for (int column = massiv.length - 1;
+                 column >= 0;
+                 column--) {
                 massiv[row][column] = currentElementValue;
                 currentElementValue++;
             }
@@ -92,8 +96,12 @@ public class Algorithm {
 
     private static int[][] firstPattern(int[][] massiv) {
         int currentElementValue = 1;
-        for (int row = 0; row < massiv.length; row++) {
-            for (int column = 0; column < massiv[row].length; column++) {
+        for (int row = 0;
+             row < massiv.length;
+             row++) {
+            for (int column = 0;
+                 column < massiv[row].length;
+                 column++) {
                 massiv[row][column] = currentElementValue;
                 currentElementValue++;
             }

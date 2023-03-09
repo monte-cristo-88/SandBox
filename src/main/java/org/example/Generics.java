@@ -14,6 +14,10 @@ public class Generics {
 //        System.out.println(aBoolean);
 //        System.out.println(aSecondBoolean);
 
+        Список список = new Список();
+
+        список.добавить("sdfsdf");
+
         Collection<Integer> collection = new ArrayList<>();
         List<Integer> list = new ArrayList<>();
         List<Integer> longList = new ArrayList<>();
@@ -24,6 +28,7 @@ public class Generics {
         list.add(3);
         list.add(3);
         list.add(3);
+
 
         Set<Integer> set = new HashSet<>();
         set.add(1);
