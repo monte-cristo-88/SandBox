@@ -1,21 +1,24 @@
 package org.example;
 
-public class Algorithm {
+public class Algorithm {   // обьявляем класс с названием Algoritm
 
-    public static void main(String[] args) {    //
-        int[][] pattern = new int[5][5];
+     public static void main(String[] args) { // обьявляем публичный статичный метод main с аргументом args типа массив  String
+        int[][] pattern = new int[5][5]; /* обьявляем переменную с названием pattern двумерного массива типа int
+                                            вызываем конструктор двумерного массива типа int с размерностью 5*/
 
 //        increament();
 
 //        pattern = firstPattern(pattern);
 //        pattern = secondPattern(pattern);
 //        pattern = thirdPattern(pattern);
-        pattern = fourthPattern(pattern);
+        pattern = fourthPattern(pattern);   /*   переменной pattern присваиваем значение результата вызова метода fourthPattern. передача
+                                                 переменной pattern как аргумент */
 
-        printArray(pattern);
+        printArray(pattern); // вызываем  метода printArray. передача переменной  pattern как аргумент
     }
 
-    private static int[][] fourthPattern(int[][] massiv) {
+    private static int[][] fourthPattern(int[][] massiv) {  /* обьявляем приватный статичный метод fourthPattern
+                                                              типа двумерного массива int. c аргументом massiv двумерного массива типа int*/
 
 
 
@@ -39,8 +42,10 @@ public class Algorithm {
 //                currentElementValue++;
 //            }
 
-        int currentElementValue = 1;
-        for (int row = 0; row < massiv.length; row++) {
+        int currentElementValue = 1;  // обьявляем переменную currentElementValue типа int и присваиваем значение 1
+        for (int row = 0;  // вызываем цикл.  переменной row типа int присваиваем значение 0
+             row < massiv.length;  // переменная row меньше длины массива massiv
+             row++) {  // шаг цикла +1
             for (int column = massiv.length - 1; column >= 0; column--) {
                 massiv[row][column] = currentElementValue;
                 currentElementValue++;
