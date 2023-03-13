@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class Main {
     public static void main(String[] args) {
-        int[] intArray = {4, 5, 3, 4, 7, 5, 3, 23, 4234};
+        int[] intArray = {4, 5, 3, 4, 7, 5, 3, 23, 4234};   //
 
         int sum = 0;
         System.out.println("Sum in the begining = " + sum);

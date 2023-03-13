@@ -5,4 +5,9 @@ public class novyiHunday extends lehkovoi {
     public String tipDvigatelya() {
         return "gazovyi";
     }
+
+    @Override
+    public void someMethod() {
+
+    }
 }

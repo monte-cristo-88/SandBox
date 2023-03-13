@@ -7,4 +7,6 @@ public abstract class lehkovoi implements Mawina {
     public int kolichestvoKoles() {
         return 4;
     }
+
+    public abstract void someMethod();
 }
