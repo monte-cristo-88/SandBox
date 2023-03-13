@@ -10,8 +10,6 @@ public class Algorithm {
 //        pattern = firstPattern(pattern);
         pattern = secondPattern(pattern);
 //        pattern = thirdPattern(pattern);
-//          pattern = fourthPattern(pattern);
-
 
         printArray(pattern);
     }
@@ -21,49 +19,14 @@ public class Algorithm {
      *      *условие при котором цикл будет продолжаться*;
      *      *правило изменения переменной*)
      * */
-    private static int[][] fourthPattern(int[][] massiv){
-
-    int currentElementValue = 1;
-        for (int row = 0;
-    row < massiv.length;
-    row++) {
-        if ((row + 1) * 2 == 0) {
-            for (int column = 0;
-                 column < massiv.length;
-                 column--) {
-                massiv[row][column] = currentElementValue;
-                currentElementValue++;
-            }
-        } else {
-            for (int column = massiv.length - 1;
-                 column >= 0;
-                 column--) {
-                massiv[row][column] = currentElementValue;
-                currentElementValue++;
-            }
-        }
-    }
-        return massiv;
-}
-
-
-
-
 
     private static int[][] thirdPattern(int[][] massiv) {
 
 
         int currentElementValue = 1;
-        for (int row = massiv.length - 1;
-             row >= 0;
-             row--){
-            for (int column =0; column<massiv[row].length;column++){
-                massiv[row][column] = currentElementValue;
-                currentElementValue++;
-            }
-        }
-
-
+//        for (int row = massiv.length)
+//
+//
         return massiv;
     }
 
